@@ -1,0 +1,52 @@
+---
+title: "DATA 550 final project"
+author: "Yutong Liu"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r include=FALSE}
+library(here)
+here::i_am("Report/DATA550_final_Yutong.Rmd")
+```
+
+# Introduction
+
+This data includes 2149 subjects with 760 AD patients and 1389 healthy controls. The data includes 34 variables, including demographic variables, like Age, Gender, Ethnicity, BMI, and Education. Also, there are diagnoses of other diseases, like Diabetes, Depression, Cardiovascular Disease, and so on. 
+
+I would like to do the following analysis based on the data:
+
+ - Look into the demographic variables, and see whether the AD and Health group are significantly different in terms of them.
+
+ - I would like to check whether there are variables highly related to AD diagnosis.
+
+ - I would like to use logistic regression to fit a regression model or AD based on variables highly related to AD.
+
+# Dataset
+
+```{r}
+AD_data<-read.csv(here::here("Data","alzheimers_disease_data.csv"))
+```
+
+# Table
+
+```{r}
+table1<- readRDS(
+   here::here("Output", "Table_1.rds")
+)
+table1
+```
+
+Based on the demographic table, we can see most demographic variables are not significantly different between AD and health group, except for `Sleep Quality`. The `Sleep Quality` of AD patients is significantly lower than that of health people. This table indicates a relatively balanced selection of samples, which is needed for the following analysis.
+
+# Figure
+
+```{r}
+figure1<- readRDS(
+   here::here("Output", "Figure_1.rds")
+)
+figure1
+```
+
+In order to study the relationship between predictive variables and AD diagnosis, as an example, this figure shows a histogram of `Mini-Mental State Examination score` distribution conditional on AD. we can see in this figure, participants with lower score have larger probability in diagnosed as AD.
+
