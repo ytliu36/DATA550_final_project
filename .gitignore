@@ -1,3 +1,4 @@
 Output/*.rds
+!Output/.gitkeep
 Report/*.html
 *.DS_Store
