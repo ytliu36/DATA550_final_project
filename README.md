@@ -13,6 +13,7 @@ This project is an Alzheimer's disease (AD) risk analysis.
 - `.Rprofile`, `renv.lock` and `renv/` include information about environment
 
 The environment information is provided by `renv`, ahead of `make` report, please run `Source/00_restore_packages.R` or `make install` to restore the packages used.
+
 The restore is successful if there is output:
 `- The library is already synchronized with the lockfile.`
 
