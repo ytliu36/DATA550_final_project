@@ -3,10 +3,10 @@
 This project is an Alzheimer's disease (AD) risk analysis.
 
 - `Source/` contains all code to generate tables, figures and report
-  - `Source/00_restore_packages.R` use package `renv` to provide the packages version used
-	- `Source/01_table1.R` produces Table 1
-	- `Source/02_figure1.R` produces Figure 1
-	- `Source/03_render_report.R` produces the report
+  - `Source/00_restore_packages.R` use package `renv` to provide the packages version used.
+  - `Source/01_table1.R` produces Table 1
+  - `Source/02_figure1.R` produces Figure 1
+  - `Source/03_render_report.R` produces the report
 - `Report/` contains Rmd and html version of report
 - `Output/` contains Table 1 and Figure 1 generated
 - `Data/` contains the data about AD risk
