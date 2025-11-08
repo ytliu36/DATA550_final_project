@@ -12,3 +12,8 @@ Output/Figure_1.rds: Source/02_figure1.R Data/alzheimers_disease_data.csv
 .PHONY: clean
 clean:
 	rm -f Output/*.rds && rm -f Report/DATA550_final_Yutong.html
+
+.PHONY: install
+install: renv.lock .Rprofile Source/00_restore_packages.R
+	Rscript Source/00_restore_packages.R
+	
