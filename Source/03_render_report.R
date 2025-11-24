@@ -3,5 +3,5 @@ here::i_am(
 )
 
 rmarkdown::render(
-  here::here("Report/DATA550_final_Yutong.Rmd")
+  here::here("Reports/DATA550_final_Yutong.Rmd")
 )

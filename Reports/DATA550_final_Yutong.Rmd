@@ -7,7 +7,7 @@ output: html_document
 
 ```{r include=FALSE}
 library(here)
-here::i_am("Report/DATA550_final_Yutong.Rmd")
+here::i_am("Reports/DATA550_final_Yutong.Rmd")
 ```
 
 # Introduction
